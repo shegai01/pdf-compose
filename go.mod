@@ -1,6 +1,8 @@
-module github.com/shegai01/pdf-compose
+module service-pdf-compose
 
-go 1.22
+go 1.23.0
+
+toolchain go1.24.5
 
 require (
 	github.com/go-openapi/errors v0.19.7
@@ -11,7 +13,9 @@ require (
 	github.com/go-openapi/swag v0.19.9
 	github.com/jessevdk/go-flags v1.4.0
 	github.com/jung-kurt/gofpdf v1.16.2
-	golang.org/x/net v0.0.0-20200925080053-05aa5d4ee321
+	golang.org/x/net v0.41.0
+	google.golang.org/grpc v1.75.1
+	google.golang.org/protobuf v1.36.9
 )
 
 require (
@@ -27,6 +31,8 @@ require (
 	github.com/mailru/easyjson v0.7.1 // indirect
 	github.com/mitchellh/mapstructure v1.3.2 // indirect
 	go.mongodb.org/mongo-driver v1.3.4 // indirect
-	golang.org/x/text v0.3.3 // indirect
+	golang.org/x/sys v0.33.0 // indirect
+	golang.org/x/text v0.26.0 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250707201910-8d1bb00bc6a7 // indirect
 	gopkg.in/yaml.v2 v2.3.0 // indirect
 )

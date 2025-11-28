@@ -1,12 +1,8 @@
 syntax = "proto3";
 
-option go_package="pdf-compose-service"
+package pdf_compose;
 
-package pdf-compose
-
-service Pdf{
-    rpc ComposeFromFiles (ComposeRequest)returns (ComposeResponse);
-}
+option go_package = "service-pdf-compose/api";
 
 message ComposeRequest {
     bytes upfile1 = 1;
@@ -14,6 +10,10 @@ message ComposeRequest {
     bytes upfile3 = 3;
 }   
     
-service ComposeResponse{
+message ComposeResponse{
     bytes pdf_file = 1;
+}
+
+service PdfComposeService{
+    rpc ComposeFromFiles(ComposeRequest) returns (ComposeResponse);
 }

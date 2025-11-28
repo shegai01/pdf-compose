@@ -24,7 +24,7 @@ import (
 	flags "github.com/jessevdk/go-flags"
 	"golang.org/x/net/netutil"
 
-	"github.com/shegai01/pdf-compose/internal/handler/operations"
+	"service-pdf-compose/internal/handler/operations"
 )
 
 const (
