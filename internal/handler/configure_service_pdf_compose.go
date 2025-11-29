@@ -10,7 +10,7 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
 
-	"service-pdf-compose/internal/handler/operations"
+	"github.com/shegai01/pdf-compose/internal/handler/operations"
 )
 
 //go:generate swagger generate server --target ../../../server --name ServicePdfCompose --spec ../../api/api.yml --server-package internal/handler --principal interface{}

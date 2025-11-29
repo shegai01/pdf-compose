@@ -1,4 +1,4 @@
-module service-pdf-compose
+module github.com/shegai01/pdf-compose
 
 go 1.23.0
 
