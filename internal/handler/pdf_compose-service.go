@@ -5,8 +5,8 @@ import (
 	"context"
 	"io"
 
-	"service-pdf-compose/api"
-	"service-pdf-compose/pkg/composer"
+	"github.com/shegai01/pdf-compose/api"
+	"github.com/shegai01/pdf-compose/pkg/composer"
 )
 
 type PdfComposeServer struct {
